@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Скрипт продаж курсов программирования</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-code"></i>
+                    <h1>Скрипт продаж курсов программирования</h1>
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="Поиск по этапам и ключевым словам...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <main>
+            <aside class="sidebar">
+                <h2>Этапы скрипта</h2>
+                <ul class="stages-list">
+                    <li><a href="#" class="active" data-stage="1"><i class="fas fa-handshake"></i> Знакомство и выявление потребностей</a></li>
+                    <li><a href="#" data-stage="2"><i class="fas fa-gamepad"></i> Диагностика знаний через игру</a></li>
+                    <li><a href="#" data-stage="3"><i class="fas fa-bullseye"></i> Резюмирование целей</a></li>
+                    <li><a href="#" data-stage="4"><i class="fas fa-comments"></i> Обратная связь по диагностике</a></li>
+                    <li><a href="#" data-stage="5"><i class="fas fa-graduation-cap"></i> Презентация курса и экосистемы</a></li>
+                    <li><a href="#" data-stage="6"><i class="fas fa-tag"></i> Презентация цены</a></li>
+                    <li><a href="#" data-stage="7"><i class="fas fa-comment-slash"></i> Обработка возражений</a></li>
+                    <li><a href="#" data-stage="8"><i class="fas fa-flag-checkered"></i> Завершение урока</a></li>
+                </ul>
+                
+                <div class="progress-container">
+                    <div class="progress-bar" id="progress-bar"></div>
+                </div>
+                <div class="counter" id="stage-counter">Этап 1 из 8</div>
+                
+                <div class="notes">
+                    <h3><i class="fas fa-pencil-alt"></i> Мои заметки</h3>
+                    <textarea placeholder="Добавьте свои заметки к этому этапу..."></textarea>
+                </div>
+            </aside>
+            
+            <div class="content">
+                <div class="stage-header">
+                    <h2 id="stage-title">Знакомство и выявление потребностей</h2>
+                    <div class="stage-meta">
+                        <span><i class="fas fa-clock"></i> Длительность: 10-15 мин</span>
+                        <span><i class="fas fa-star"></i> Ключевой этап</span>
+                    </div>
+                </div>
+                
+                <div class="stage-content" id="stage-content">
+                </div>
+                
+                <div class="navigation">
+                    <button class="nav-btn secondary" id="prev-btn"><i class="fas fa-arrow-left"></i> Предыдущий этап</button>
+                    <button class="nav-btn" id="next-btn">Следующий этап <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </main>
+        <script src="index.js"></script>
+    </div>
+    
+</body>
+</html>
