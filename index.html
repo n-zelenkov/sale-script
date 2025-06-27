@@ -15,12 +15,6 @@
                     <i class="fas fa-laptop-code"></i>
                     <h1>Скрипт продаж курсов программирования</h1>
                 </div>
-                <div class="controls">
-                    <div class="search-box">
-                        <input type="text" placeholder="Поиск по этапам и ключевым словам...">
-                        <button><i class="fas fa-search"></i></button>
-                    </div>
-                </div>
             </div>
         </div>
     </header>
@@ -53,58 +47,36 @@
             
             <div class="content">
                 <div class="stage-header">
-                    <h2 id="stage-title"><i class="fas fa-handshake"></i> Знакомство и выявление потребностей</h2>
-                    <div class="stage-meta">
-                        <div class="meta-item">
-                            <i class="fas fa-clock"></i> Длительность: 10-15 мин
+                    <div>
+                        <h2 id="stage-title"><i class="fas fa-handshake"></i> Знакомство и выявление потребностей</h2>
+                        <div class="stage-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-star"></i> Ключевой этап
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-exclamation-circle"></i> Важно: Установить контакт
+                            </div>
                         </div>
-                        <div class="meta-item">
-                            <i class="fas fa-star"></i> Ключевой этап
-                        </div>
-                        <div class="meta-item">
-                            <i class="fas fa-exclamation-circle"></i> Важно: Установить контакт
+                    </div>
+                    
+                    <div class="timer-container">
+                        <div class="timer-display timer-positive" id="timer-display">15:00</div>
+                        <div class="timer-controls">
+                            <button class="timer-btn start" id="timer-start">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <button class="timer-btn pause" id="timer-pause">
+                                <i class="fas fa-pause"></i>
+                            </button>
+                            <button class="timer-btn reset" id="timer-reset">
+                                <i class="fas fa-redo"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
                 
                 <div class="stage-content" id="stage-content">
-                   
-                    
-                    <div class="script-block">
-                        <h3><i class="fas fa-computer"></i> Компьютер (из файла)</h3>
-                        <div class="script-text">
-                            <p><strong>Металл</strong></p>
-                            <p><strong>Задача:</strong></p>
-                            <ul>
-                                <li><strong>Уровень проверки:</strong> Дополнительно с помощью системы управления и систематизации данных, а также выпускать в состав данных.</li>
-                            </ul>
-                            <p>В случае необходимости привести к заключению данных, если вы не можете утвердить их на основе данных.</p>
-                            
-                            <div class="page-break"></div>
-                            
-                            <p><strong>Представьте подписанный текст</strong></p>
-                            <p><strong>Металл</strong></p>
-                            <p><strong>Задача:</strong></p>
-                            <ul>
-                                <li><strong>Уровень проверки:</strong> Дополнительно с помощью системы управления и систематизации данных, а также выпускать в состав данных.</li>
-                            </ul>
-                            <p>В случае необходимости привести к заключению данных, если вы не можете утвердить их на основе данных.</p>
-                            
-                            <div class="page-break"></div>
-                            
-                            <p><strong>Подписи</strong></p>
-                            <p><strong>Металл</strong></p>
-                            <p><strong>Задача:</strong></p>
-                            <ul>
-                                <li><strong>Уровень проверки:</strong> Дополнительно с помощью системы управления и систематизации данных, а также выпускать в состав данных.</li>
-                            </ul>
-                            <p>В случае необходимости привести к заключению данных, если вы не можете утвердить их на основе данных.</p>
-                            
-                            <div class="page-break"></div>
-                            
-                            <p>(Повторяющиеся блоки из файла следуют здесь в соответствии с оригиналом...)</p>
-                        </div>
-                    </div>
+              
                 </div>
                 
                 <div class="navigation">
@@ -112,8 +84,21 @@
                     <button class="nav-btn" id="next-btn">Следующий этап <i class="fas fa-arrow-right"></i></button>
                 </div>
             </div>
+            
+            <aside class="objections-sidebar" id="objections-sidebar">
+                <div class="objections-header">
+                    <h3><i class="fas fa-comments"></i> Быстрая навигация по возражениям</h3>
+                </div>
+                <ul class="objections-list" id="objections-list">
+                  
+                </ul>
+            </aside>
         </main>
     </div>
+    
+    <button class="mobile-objections-btn" id="mobile-objections-btn">
+        <i class="fas fa-comments"></i>
+    </button>
     
     <script src="index.js"></script>
 </body>
